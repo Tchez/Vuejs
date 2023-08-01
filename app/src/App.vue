@@ -1,48 +1,19 @@
 <template>
-  <TheHeader v-if="showHeader" />
-
-  <div v-show="showName">
-    Nome: {{ firstName }}
-    <br />
-    Sobrenome: {{ lastName }}
-  </div>
-
-  <div v-if="accessLevel === 'adm'">adm</div>
-  <div v-else-if="accessLevel === 'mrk'">marketing</div>
-  <div v-else>user</div>
-
-  <MyInput />
+  <MyButton />
 </template>
 
 <script>
-import MyInput from "./components/MyInput.vue";
-import TheHeader from "./components/TheHeader.vue";
+import MyButton from "./components/MyButton.vue";
 
 export default {
   name: "App",
   components: {
-    TheHeader,
-    MyInput,
+    MyButton,
   },
   data() {
-    return {
-      showHeader: true,
-      firstName: "Marco Antônio",
-      lastName: "Martins",
-      showName: false,
-      accessLevel: "mrk",
-    };
+    return {};
   },
 };
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style></style>
