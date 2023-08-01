@@ -11,19 +11,18 @@
   <div v-else-if="accessLevel === 'mrk'">marketing</div>
   <div v-else>user</div>
 
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js App" />
+  <MyInput />
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import MyInput from "./components/MyInput.vue";
 import TheHeader from "./components/TheHeader.vue";
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
     TheHeader,
+    MyInput,
   },
   data() {
     return {
