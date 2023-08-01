@@ -1,9 +1,20 @@
 <template>
-  <header class="header">Header</header>
+  <div>
+    <div v-for="(obj, index) in array" v-bind:key="index">
+      {{ obj.name }}
+    </div>
+  </div>
 </template>
 
 <script>
-export default {};
+export default {
+  name: "TheHeader",
+  data() {
+    return {
+      array: [{ name: "Marco" }, { name: "Antônio" }, { name: "Martins" }],
+    };
+  },
+};
 </script>
 
 <style>
