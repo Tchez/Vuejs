@@ -1,18 +1,24 @@
 <template>
-  <MyButton />
+  <ComputedExample />
+  <TodosList />
 </template>
 
 <script>
-import MyButton from "./components/MyButton.vue";
-
+import ComputedExample from "./components/ComputedExample.vue";
+import TodosList from "./components/TodosList.vue";
 export default {
   name: "App",
+
   components: {
-    MyButton,
+    ComputedExample,
+    TodosList,
   },
+
   data() {
     return {};
   },
+
+  computed: {},
 };
 </script>
 
