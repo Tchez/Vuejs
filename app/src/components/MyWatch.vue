@@ -30,6 +30,14 @@ export default {
     };
   },
 
+  beforeUnmount() {
+    console.log("Before unmount");
+  },
+
+  unmounted() {
+    console.log("Unmounted");
+  },
+
   watch: {
     name(newValue, oldValue) {
       if (newValue.length >= 3) {
