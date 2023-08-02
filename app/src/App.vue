@@ -1,24 +1,25 @@
 <template>
-  <ComputedExample />
-  <TodosList />
+  <MyWatch />
 </template>
 
 <script>
-import ComputedExample from "./components/ComputedExample.vue";
-import TodosList from "./components/TodosList.vue";
+import MyWatch from "./components/MyWatch.vue";
 export default {
   name: "App",
 
   components: {
-    ComputedExample,
-    TodosList,
+    MyWatch,
   },
 
   data() {
     return {};
   },
 
+  watch: {},
+
   computed: {},
+
+  methods: {},
 };
 </script>
 
