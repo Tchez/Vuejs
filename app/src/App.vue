@@ -1,59 +1,30 @@
 <template>
-  <button @click="showMyWatch = !showMyWatch">Toggle MyWatch</button>
-  <br />
-  <MyWatch v-if="showMyWatch" />
+  <NavBar>
+    <ul class="list">
+      <li>
+        <h1>Home</h1>
+      </li>
+      <li>
+        <h1>Sobre</h1>
+      </li>
+    </ul>
+    <template v-slot:nomeado>
+      <button class="btn">Login</button>
+    </template>
+  </NavBar>
 </template>
 
 <script>
-import MyWatch from "./components/MyWatch.vue";
+import NavBar from "./components/NavBar.vue";
 export default {
   name: "App",
 
   components: {
-    MyWatch,
+    NavBar,
   },
 
   data() {
-    return {
-      variavel: "carregou!",
-      showMyWatch: false,
-    };
-  },
-
-  beforeUpdate() {
-    console.log("Before update");
-    console.log("Variável:", this.variavel);
-    console.log("DOM:", this.$el);
-  },
-
-  updated() {
-    console.log("Updated");
-    console.log("Variável:", this.variavel);
-    console.log("DOM:", this.$el);
-  },
-
-  beforeCreate() {
-    console.log("Before create");
-    console.log("Variável:", this.variavel);
-    console.log("DOM:", this.$el);
-  },
-
-  created() {
-    console.log("Created");
-    console.log("Variável:", this.variavel);
-    console.log("DOM:", this.$el);
-  },
-
-  beforeMount() {
-    console.log("Before mount");
-    console.log("Variável:", this.variavel);
-    console.log("DOM:", this.$el);
-  },
-
-  mounted() {
-    console.log("Mounted");
-    console.log("Variável:", this.variavel);
-    console.log("DOM:", this.$el);
+    return {};
   },
 
   watch: {},
