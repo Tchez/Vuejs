@@ -12,15 +12,19 @@
       <button class="btn">Login</button>
     </template>
   </NavBar>
+
+  <BaseCard />
 </template>
 
 <script>
-import NavBar from "./components/NavBar.vue";
+import NavBar from "@/components/NavBar.vue";
+import BaseCard from "@/components/BaseCard.vue";
 export default {
   name: "App",
 
   components: {
     NavBar,
+    BaseCard,
   },
 
   data() {
