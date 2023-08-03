@@ -1,30 +1,16 @@
 <template>
-  <NavBar>
-    <ul class="list">
-      <li>
-        <h1>Home</h1>
-      </li>
-      <li>
-        <h1>Sobre</h1>
-      </li>
-    </ul>
-    <template v-slot:nomeado>
-      <button class="btn">Login</button>
-    </template>
-  </NavBar>
-
-  <BaseCard />
+  <BaseAlert />
+  <BaseAlert type="danger" message="Teste" />
+  <BaseAlert type="success" />
 </template>
 
 <script>
-import NavBar from "@/components/NavBar.vue";
-import BaseCard from "@/components/BaseCard.vue";
+import BaseAlert from "./components/BaseAlert.vue";
 export default {
   name: "App",
 
   components: {
-    NavBar,
-    BaseCard,
+    BaseAlert,
   },
 
   data() {
